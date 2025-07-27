@@ -1,1 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #d3d3d3;
+  font-family: 'Segoe UI', sans-serif;
+  color: #000;
+  background-image: url('https://i.imgur.com/kzqL9zH.png'); /* fondo minero suave */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h2 {
+  background-color: #8b0000;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+#malla {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.nivel {
+  border: 2px solid #000;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.ramo {
+  background-color: white;
+  border: 2px solid #000;
+  border-left: 10px solid #8b0000;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+  position: relative;
+}
+
+.ramo:hover {
+  background-color: #f9f9f9;
+}
+
+.aprobado {
+  background-color: #a5d6a7;
+  text-decoration: line-through;
+  color: #2e7d32;
+}
+
+.bloqueado {
+  background-color: #ffcdd2;
+  color: #b71c1c;
+  cursor: not-allowed;
+}
+
+.mensaje {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .ramo {
+    font-size: 0.9rem;
+  }
+}
 
